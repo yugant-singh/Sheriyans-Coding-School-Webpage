@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 const Navbar = () => {
   return (
     <div>
@@ -14,24 +14,16 @@ const Navbar = () => {
                 <h4>coding school</h4>
             </div>
         </div>
-{/* 
- center */}
-        {/* <div className='h-full w-[50%] flex items-center justify-between gap-5'>
-            <a  className='text-white py-2.5 px-5 text-sm'  href="#">Home</a>
-             <a  className='text-white py-2.5 px-5 text-sm' href="#">Cources</a>
-              <a  className='text-white py-2.5 px-5 text-sm' href="#">Bootcamps</a>
-               <a  className='text-white py-2.5 px-5 text-sm' href="#">Request Callback</a>
-               <a  className='text-white py-2.5 px-5 text-sm' href="#">Classroom</a>
-        </div> */}
+
 
 
         {/* right */}
         <div className='h-full w-[60%] flex  items-center justify-between p-4'>
-             <a  className='text-white py-2.5 px-5 text-sm'  href="#">Home</a>
-             <a  className='text-white py-2.5 px-5 text-sm' href="#">Cources</a>
-              <a  className='text-white py-2.5 px-5 text-sm' href="#">Bootcamps</a>
-               <a  className='text-white py-2.5 px-5 text-sm' href="#">Request Callback</a>
-               <a  className='text-white py-2.5 px-5 text-sm' href="#">Classroom</a>
+             <Link  className='text-white py-2.5 px-5 text-sm'  to="/">Home</Link>
+             <Link  className='text-white py-2.5 px-5 text-sm' to="/course">Courses</Link>
+              <Link  className='text-white py-2.5 px-5 text-sm' to="/bootcamp">Bootcamps</Link>
+               <Link  className='text-white py-2.5 px-5 text-sm' to="/callback">Request Callback</Link>
+               <Link  className='text-white py-2.5 px-5 text-sm' to="/classroom">Classroom</Link>
             <h4 className='text-white py-2.5 px-5 text-sm'><i className="ri-notification-2-fill"></i></h4>
             <img  className='h-8 w-8 rounded-full object-cover' src="https://lh3.googleusercontent.com/a/ACg8ocIErQ0DcldzUFQjNzGi48uLtjLWU1hx0mo_HHcEWHY9tzq11ymB=s96-c" alt="" />
         </div>

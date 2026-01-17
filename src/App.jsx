@@ -4,19 +4,31 @@ import Button from './components/Button'
 import Hero from './components/Hero'
 
 import CardSection from './components/card/CardSection'
-
-
-
+import Sections from './Sections'
+import { Route, Routes } from 'react-router-dom'
+import Course from './pages/Course'
+import Home from './pages/Home'
+import Bootcamps from './pages/Bootcamps'
+import Classrooms from './pages/Classrooms'
+import About from './pages/Callback'
+import Callback from './pages/Callback'
 
 const App = () => {
+ 
   return (
-    <div className=' min-h-screen w-full
-  bg-[radial-gradient(ellipse_at_40%_5%,_#144C3E_0%,_#0c0c0c_35%)]'>
-      <Navbar />
-      <Hero />
-<CardSection/>
+    
+  <div>
+   
 
-    </div>
+<Routes>
+  <Route path='/' element={<Sections/>}/>
+  <Route path='/course' element={<Course/>}/>
+  <Route path='/bootcamp' element={<Bootcamps/>}/>
+  <Route path='/classroom' element={<Classrooms/>}/>
+   <Route path='/callback' element={<Callback/>}/>
+</Routes>
+
+  </div>
   )
 }
 

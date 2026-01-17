@@ -6,12 +6,11 @@ import Cards from './Cards'
 
 const CardSection = () => {
   return (
-   <section className='text-white font-[HalveticaLigh] p-5 flex flex-wrap justify-between gap-1'>
+   <section className='text-white items-center  font-[HalveticaLight] p-5 flex justify-center gap-1'>
     
    <Cards/>
-    <Cards/>
-    <Cards/>
-    <Cards/>
+   
+   
    </section>
   )
 }

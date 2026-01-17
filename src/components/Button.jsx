@@ -1,11 +1,18 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import CardSection from './card/CardSection'
 
 const Button = (props) => {
-    console.log(props);
-    
+  let navigate = useNavigate()
+   
   return (
     
-    <button className='text-2xl  font-semibold  bg-[#24CFA6]  rounded-xl px-7 text-center py-1.5 text-black' >{props.text}</button>
+    <button onClick={()=>{
+      navigate('/course')
+      console.log("Btn clicked");
+      
+      
+    }} className='text-2xl pointer font-semibold cursor-pointer bg-[#24CFA6]  rounded-xl px-7 text-center py-1.5 text-black' >{props.text}</button>
 
     
   )
