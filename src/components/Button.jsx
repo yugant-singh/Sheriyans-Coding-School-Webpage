@@ -12,7 +12,7 @@ const Button = (props) => {
       console.log("Btn clicked");
       
       
-    }} className='text-2xl pointer font-semibold cursor-pointer bg-[#24CFA6]  rounded-xl px-7 text-center py-1.5 text-black' >{props.text}</button>
+    }} className='text-2xl pointer font-semibold cursor-pointer w-fit bg-[#24CFA6]  rounded-xl px-7 text-center py-2 text-black' >{props.text}</button>
 
     
   )

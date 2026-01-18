@@ -2,6 +2,8 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import CardSection from './components/card/CardSection'
+import Section3 from './components/section3/Section3'
+import Footer from './components/footer/Footer'
 
 const Sections = () => {
   return (
@@ -10,8 +12,8 @@ const Sections = () => {
     <Navbar/>
       <Hero/>
 <CardSection/>
-
-
+<Section3/>
+<Footer/>
     </div>
   )
 }
